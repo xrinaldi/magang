@@ -1,0 +1,352 @@
+/* Reset dan style dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header dan navigasi */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3498db;
+}
+
+/* Hero section */
+#beranda {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.thefhguide.com/img/artificial-intelligence.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+#beranda h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#beranda p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+#beranda a {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+}
+
+#beranda a:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Section umum */
+section {
+    padding: 5rem 2rem;
+}
+
+section:nth-child(odd) {
+    background-color: white;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+section > p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    color: #7f8c8d;
+}
+
+/* Layanan */
+#layanan article {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#layanan article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+#layanan h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#layanan ul {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+/* Testimoni */
+#testimoni {
+    background-color: #ecf0f1;
+}
+
+blockquote {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    position: relative;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 5rem;
+    color: #3498db;
+    opacity: 0.2;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+}
+
+blockquote p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Formulir kontak */
+#kontak form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#kontak div {
+    margin-bottom: 1.5rem;
+}
+
+#kontak label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#kontak input,
+#kontak textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#kontak input:focus,
+#kontak textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+#kontak button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+}
+
+#kontak button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+/* Tentang Kami Section */
+.tentang-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tentang-image {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tentang-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.tentang-image img:hover {
+    transform: scale(1.03);
+}
+
+.tentang-content {
+    flex: 2;
+    min-width: 300px;
+}
+
+.tentang-content h3 {
+    color: #3498db;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.tentang-content h3:first-child {
+    margin-top: 0;
+}
+
+.tentang-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tentang-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    header h1 {
+        margin-bottom: 1rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    #beranda {
+        height: auto;
+        padding: 5rem 1rem;
+    }
+    
+    #beranda h2 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 3rem 1rem;
+    }
+}
